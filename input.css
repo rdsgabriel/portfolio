@@ -28,11 +28,11 @@ html, body {
 
 .secondary-title::before {
     content: "";
-    @apply block w-12 h-2 bg-theme rounded-full mb-1;
+    @apply block w-12 h-2 bg-theme rounded-full mb-3;
 }
 
 .section-paragraph {
-    @apply text-secondary my-6 w-full max-w-3xl;
+    @apply text-secondary my-5 w-full max-w-3xl;
 }
 
 .badge {

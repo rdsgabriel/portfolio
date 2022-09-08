@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 
 <body class="bg-body text-white font-poppins pb-12">
@@ -35,7 +36,7 @@
         </div>
     </header>
     <main>
-        <!--navbar-->
+        <!--navbar & main-->
         <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <div class="flex flex-wrap md:flex-nowrap justify-center">
                 <nav class="md:block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
@@ -56,8 +57,8 @@
                 </nav>
                 <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36 ">
                     <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">Building <br>
-                        beautiful web experiences.</h1>
-                    <div class="w-full flex justify-center md:justify-start">
+                        beautiful experiences.</h1>
+                    <a href="#work" class="w-full flex justify-center md:justify-start">
                         <button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
                             <div>
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -72,13 +73,25 @@
                             </div>
                             <span>View my work.</span>
                         </button>
-                    </div>
+                    </a>
                 </div>
+
                 <img src="qualquer.webp" alt="" class="w-2/4 mt-12 md:absolute md:mt-0 md:right-0 -z-1">
             </div>
         </div>
+        <!--  about me -->
+        <div class="container mt-36 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full  ">
+            <section class="w-full">
+                <h2 class="secondary-title">A little about me</h2>
+                <p class="section-paragraph">
+                    I was born and raised in Rio de Janeiro, on the periphery. Passionate about studying, I got the
+                    opportunity to study at an excellent school with financial aid. With that, I discovered the
+                    transforming power of education and found a passion: Programming.
+                </p>
+            </section>
+        </div>
         <!--My work bro-->
-        <div class="container mt-44 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <div class="container mt-36 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <section class="w-full">
                 <h2 id="work" class="secondary-title">My work</h2>
                 <p class="section-paragraph">
@@ -86,29 +99,21 @@
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-                    <img src="soon.jpg"
-                        class="w-full bg-nav h-36 lg:h-72 object-cover">
-                    <img src="soon.jpg"
-                        class="w-full bg-nav h-36 lg:h-72 object-cover">
-                    <img src="soon.jpg"
-                        class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                    <img src="soon.jpg"
-                        class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                    <img src="soon.jpg"
-                        class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                    <img src="soon.jpg"
-                        class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                    <img src="soon.jpg"
-                        class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                    <img src="soon.jpg"
-                        class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                    <img src="soon.jpg"
-                        class="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover">
+                    <div class="w-full h-36 lg:h-72 object-cover bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100"></div>
+                    <div class="w-full h-36 lg:h-72 object-cover bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100"></div>
+                    <div class="w-full h-36 lg:h-72 object-cover bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100"></div>
+                    <div class="w-full h-36 lg:h-72 object-cover bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100"></div>
+                    <div class="w-full h-36 lg:h-72 object-cover hidden md:block bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100"></div>
+                    <div class="w-full h-36 lg:h-72 object-cover hidden md:block bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100"></div>
+                    <div class="w-full h-36 lg:h-72 object-cover hidden md:block bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100"></div>
+                    <div class="w-full h-36 lg:h-72 object-cover hidden md:block bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100"></div>
+                    <div class="w-full h-36 lg:h-72 object-cover hidden md:block bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100"></div>
+                    <p class="text-secondary mx-auto md:hidden">See more on my <a class="font-semibold" href="https://github.com/rdsgabriel">github.</a></p>
                 </div>
             </section>
         </div>
         <!-- Techs -->
-        <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <div class="container mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <section class="w-full">
                 <h2 id="techs" class="secondary-title">Technologies I've worked</h2>
                 <p class="section-paragraph">I’ve had the pleasure of working with this Techs</p>
@@ -204,7 +209,7 @@
             </section>
         </div>
         <!-- Hire me -->
-        <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <div class="container mt-44 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <section class="w-full">
                 <h2 id="contact" class="secondary-title">Contact me</h2>
                 <p class="section-paragraph">Feel free to contact me any time, through any method below.</p>
@@ -224,48 +229,44 @@
                             <textarea type="email"
                                 class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"></textarea>
                         </div>
-                        <button class="px-6 py-2 bg-theme text-white font-bold">Send it!</button>
+                        <button class="px-6 py-2 bg-theme text-white font-bold flex">
+                            Send it!
+                        </button>
+                        <button class="py-3 bg-theme text-white font-bold flex justify-center m-auto w-full space-x-3 ">
+                            <p>My CV here</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22" height="22" fill="white" ><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg>
+
+                        </button>
                     </div>
 
                     <div class="mt-12">
                         <!-- Contact info -->
-                        <p class="text-secondary">555-555-1234</p>
-                        <a href="mailto:email@mydomain.com"
-                            class="text-secondary underline mt-3 block">email@mydomain.com</a>
+                        <p class="text-secondary">                          
+                            +55 21 9 71899439</p>
+                        <a href="mailto:rdsgabriel.dev@gmail.com"
+                            class="text-secondary underline mt-3 block">rdsgabriel.dev@gmail.com</a>
 
                         <!-- Socials -->
                         <div class="flex mt-20 space-x-6">
-                            <!-- 1 -->
-                            <a href="#">
-                                <svg class="w-8 h-8 lg:w-12 lg:h-12" width="50" height="50" viewBox="0 0 50 50"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M43.1494 28.252C43.3496 27.1533 43.457 26.0303 43.457 24.9072C43.457 22.417 42.9688 20 42.0068 17.7295C41.0791 15.5322 39.7461 13.5596 38.0518 11.8652C36.3716 10.1808 34.3799 8.83914 32.1875 7.91504C29.9121 6.95313 27.5 6.46484 25.0098 6.46484C23.8379 6.46484 22.6611 6.57715 21.5186 6.79687C19.9376 5.9591 18.176 5.51995 16.3867 5.51758C13.4717 5.51758 10.7275 6.65527 8.66699 8.71582C7.65021 9.72738 6.84403 10.9305 6.29507 12.2555C5.74611 13.5806 5.46526 15.0013 5.46875 16.4355C5.46875 18.291 5.94727 20.1172 6.84082 21.7285C6.66016 22.7734 6.5625 23.8428 6.5625 24.9072C6.5625 27.3975 7.05078 29.8145 8.0127 32.085C8.94043 34.2822 10.2686 36.2549 11.9629 37.9492C13.6572 39.6436 15.6299 40.9717 17.8272 41.8994C20.1025 42.8613 22.5147 43.3496 25.0049 43.3496C26.0889 43.3496 27.1729 43.252 28.2373 43.0615C29.8731 43.9844 31.7188 44.4775 33.6084 44.4775C36.5234 44.4775 39.2676 43.3447 41.3281 41.2793C43.3936 39.2188 44.5264 36.4746 44.5264 33.5596C44.5313 31.7041 44.0527 29.873 43.1494 28.252ZM25.083 36.2061C18.5303 36.2061 15.6006 32.9834 15.6006 30.5713C15.6006 29.3311 16.5137 28.4668 17.7734 28.4668C20.5762 28.4668 19.8535 32.4951 25.083 32.4951C27.7637 32.4951 29.2432 31.04 29.2432 29.5508C29.2432 28.6572 28.8037 27.6611 27.0361 27.2266L21.2061 25.7715C16.5137 24.5947 15.6592 22.0557 15.6592 19.6729C15.6592 14.7217 20.3223 12.8613 24.7022 12.8613C28.7354 12.8613 33.4912 15.0928 33.4912 18.0615C33.4912 19.3359 32.3877 20.0732 31.1279 20.0732C28.7354 20.0732 29.1748 16.7627 24.3555 16.7627C21.9629 16.7627 20.6397 17.8467 20.6397 19.3945C20.6397 20.9424 22.5293 21.4355 24.1699 21.8115L28.4863 22.7686C33.2129 23.8232 34.4092 26.582 34.4092 29.1797C34.4092 33.1982 31.3184 36.2061 25.083 36.2061Z"
-                                        fill="white" />
-                                </svg>
+                            
+                            <a href="https://github.com/rdsgabriel">
+                                <svg class="w-8 h-8 lg:w-12 lg:h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="42" height="42" fill="white"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
                             </a>
-                            <!-- 2 -->
-                            <a href="#">
-                                <svg class="w-8 h-8 lg:w-12 lg:h-12" width="42" height="42" viewBox="0 0 42 42"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M21 0C9.40313 0 0 9.40313 0 21C0 32.5969 9.40313 42 21 42C32.5969 42 42 32.5969 42 21C42 9.40313 32.5969 0 21 0ZM31.0922 15.8297C31.1062 16.05 31.1062 16.2797 31.1062 16.5047C31.1062 23.3859 25.8656 31.3125 16.2891 31.3125C13.3359 31.3125 10.5984 30.4547 8.29219 28.9781C8.71406 29.025 9.11719 29.0437 9.54844 29.0437C11.9859 29.0437 14.2266 28.2188 16.0125 26.8219C13.725 26.775 11.8031 25.275 11.1469 23.2125C11.9484 23.3297 12.6703 23.3297 13.4953 23.1188C12.3175 22.8795 11.2588 22.2398 10.4991 21.3084C9.73949 20.377 9.32572 19.2113 9.32812 18.0094V17.9437C10.0172 18.3328 10.8281 18.5719 11.6766 18.6047C10.9633 18.1293 10.3784 17.4854 9.97365 16.7298C9.5689 15.9743 9.35683 15.1306 9.35625 14.2734C9.35625 13.3031 9.60938 12.4172 10.0641 11.6484C11.3714 13.2578 13.0028 14.5741 14.8522 15.5117C16.7016 16.4493 18.7275 16.9873 20.7984 17.0906C20.0625 13.5516 22.7063 10.6875 25.8844 10.6875C27.3844 10.6875 28.7344 11.3156 29.6859 12.3281C30.8625 12.1078 31.9875 11.6672 32.9906 11.0766C32.6016 12.2812 31.7859 13.2984 30.7031 13.9406C31.7531 13.8281 32.7656 13.5375 33.7031 13.1297C32.9953 14.1703 32.1094 15.0938 31.0922 15.8297Z"
-                                        fill="white" />
-                                </svg>
+                            <a href="https://www.linkedin.com/in/gabriel-rodrigues-835b02192/">
+                                <svg class="w-8 h-8 lg:w-12 lg:h-12" width="43" height="43" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                            </a>
+                            <a href="https://wa.me/21971899439">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 lg:w-12 lg:h-12" width="43" height="43" fill="white" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
                             </a>
                         </div>
+
                     </div>
-
                 </div>
-
             </section>
         </div>
     </main>
-    <footer>
-        <div class="pl-20 pt-5">lembra de nois pai
-            tem q: <br> fazer o footer, consertar as frases, achar um svg descente, mudar as cores, implementar glassmorphism, <br>
-        fazer a logica do contact, importar o awesomefont pra colocar as techs e os contatos, fazer o modo noturno e fazer deploy. </div>
-        
+    <footer class="pt-10 container flex mx-auto px-8 md:px-14 lg:px-24 w-full items-center">
+
     </footer>
 </body>
 
