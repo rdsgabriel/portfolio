@@ -12,3 +12,18 @@ updateList();
 window.addEventListener('scroll', () => {
     updateList();
 })
+
+
+const nav = document.getElementById("especific")
+
+const sim = document.getElementById("symbol")
+
+const openNav = () => {	
+	nav.classList.remove('hidden')
+	sim.classList.add('hidden')
+}
+
+const closeNav = () => {
+	nav.classList.add('hidden')
+	sim.classList.remove('hidden')
+}
