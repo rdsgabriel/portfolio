@@ -13,18 +13,18 @@
     <script src="main.js" defer></script>
 </head>
 
-<body id="by" class="backs bg-cover bg-no-repeat text-white dark:text-gray-700 font-poppins pb-12">
+<body id="by" class="backs bg-cover bg-no-repeat text-gray-700 dark:text-white font-poppins pb-12">
     <header class="py-6">
         <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <div class="text-xl font-semibold tracking-wide"><a href="https://github.com/rdsgabriel" target="_blank"
                     rel="noopener noreferrer">rdsgabriel.dev</a>&nbsp &nbsp<img class="w-6 float-right pt-[6px]"
                     src="brazil.gif" alt="" srcset=""> </div>
-                    <div>
-                        <button id="on" class="px-4 py-2 bg-theme text-white font-bold flex  hover:bg-teal-700" onclick="openLight()">
-                            on
+                    <div class="flex align-items justify-center md:pl-40">
+                        <button id="on" class="px-4 py-2 bg-none border rounded-full border-black" onclick="dark()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="black" width="20px" height="20px" ><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
                             </button">
-                            <button id="off" class=" hidden px-4 py-2 bg-theme text-white font-bold  hover:bg-teal-700" onclick="closeLight()">
-                                off
+                            <button id="off" class=" hidden px-4 py-2  bg-black border rounded-full border-gray-100" onclick="light()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="20px" height="20px" "><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM352 256c0 53-43 96-96 96s-96-43-96-96s43-96 96-96s96 43 96 96zm32 0c0-70.7-57.3-128-128-128s-128 57.3-128 128s57.3 128 128 128s128-57.3 128-128z"/></svg>
                                 </button">    
                     </div>                   
             <div class="hidden md:flex space-x-12 items-center">
@@ -40,7 +40,7 @@
                         fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="open"
                             d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
-                            fill="white" />
+                            fill="#374151" />
                     </svg>
                 </button>
             </div>
@@ -97,8 +97,8 @@
         <!--  about me -->
         <div class="container mt-36 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full  ">
             <section class="w-full">
-                <p class="secondary-title dark:text-gray-700">A little about me</p>
-                <p class="section-paragraph dark:text-gray-600">
+                <p class="secondary-title dark:text-white">A little about me</p>
+                <p class="section-paragraph dark:text-secondary">
                     I was born and raised in Rio de Janeiro, on the periphery. Passionate about studying, I got the
                     opportunity to study at an excellent school with financial aid. With that, I discovered the
                     transforming power of education and found a passion: Programming. Lorem ipsum dolor sit amet
@@ -114,7 +114,7 @@
         <div class="container mt-36 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <section class="w-full">
                 <h2 id="work" class="secondary-title ">My work</h2>
-                <p class="section-paragraph dark:text-gray-600">
+                <p class="section-paragraph dark:text-secondary">
                     I had the opportunity to work as a freelancer, designing and implementing both frontend and backend.
                 </p>
 
@@ -155,8 +155,8 @@
         <!-- Techs -->
         <div class="container mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <section class="w-full">
-                <h2 id="techs" class="secondary-title">Technologies I've worked</h2>
-                <p class="section-paragraph dark:text-gray-600">I’ve had the pleasure of working with this Techs</p>
+                <h2 id="techs" class="secondary-title dark:text-white">Technologies I've worked</h2>
+                <p class="section-paragraph dark:text-secondary">I’ve had the pleasure of working with this Techs</p>
 
                 <!-- techs -->
                 <div class="space-y-12 my-16">
@@ -165,7 +165,7 @@
 
                         <!-- tailwind -->
                         <div class="mb-6 lg:mb-0">
-                            <svg id="tail" width="80" height="96" fill="white" viewBox="0 0 24 24"
+                            <svg id="tail" width="80" height="96" fill="#374151" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z" />
@@ -174,15 +174,15 @@
 
                         <!-- techs info -->
                         <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                            <h3 class="text-white text-3xl font-semibold dark:text-gray-700">Tailwind</h3>
+                            <h3 class="text-3xl font-semibold dark:text-white text-gray-700">Tailwind</h3>
 
                             <div
                                 class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-                                <div class="badge dark:text-white">CSS Framework</div>
-                                <div class="badge dark:text-white">Frontend development</div>
+                                <div class="badge text-white">CSS Framework</div>
+                                <div class="badge text-white">Frontend development</div>
                             </div>
 
-                            <p class="text-secondary dark:text-gray-600">Tailwind CSS is an open source CSS framework.
+                            <p class="text-gray-700 dark:text-secondary">Tailwind CSS is an open source CSS framework.
                                 The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it
                                 does not provide a series of predefined classes for elements such as buttons or tables.
                             </p>
@@ -194,7 +194,7 @@
 
                         <!-- tailwind logo -->
                         <div class="mb-6 lg:mb-0">
-                            <svg id="react" width="80" height="96" fill="white" xmlns="http://www.w3.org/2000/svg"
+                            <svg id="react" width="80" height="96" fill="#374151" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512">
                                 <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                 <path
@@ -204,15 +204,15 @@
 
                         <!-- react info -->
                         <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                            <h3 class="text-white text-3xl font-semibold dark:text-gray-700">React</h3>
+                            <h3 class="text-3xl font-semibold dark:text-white text-gray-700">React</h3>
 
                             <div
                                 class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-                                <div class="badge dark:text-white">JS lib</div>
-                                <div class="badge dark:text-white">Frontend development</div>
+                                <div class="badge text-white">JS lib</div>
+                                <div class="badge text-white">Frontend development</div>
                             </div>
 
-                            <p class="text-secondary dark:text-gray-600">React is a free and open-source front-end
+                            <p class="dark:text-secondary text-gray-700">React is a free and open-source front-end
                                 JavaScript library for building user interfaces based on UI components. It is maintained
                                 by Meta and a community of individual developers and companies.</p>
                         </div>
@@ -223,24 +223,24 @@
 
                         <!-- tailwind logo -->
                         <div class="mb-6 lg:mb-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="96" fill="white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="96" fill="#374151">
                                 <path id="type"
                                     d="M0 32v32h64.002V-.002H0zm51.577-2.55c1.625.406 2.865 1.128 4.003 2.306.59.63 1.463 1.778 1.534 2.052.02.08-2.763 1.95-4.45 2.997-.06.04-.305-.223-.58-.63-.823-1.2-1.686-1.717-3.007-1.808-1.94-.132-3.2.884-3.18 2.58 0 .498.07.792.274 1.2.427.884 1.22 1.412 3.708 2.49 4.582 1.97 6.542 3.27 7.76 5.12 1.36 2.062 1.666 5.354.742 7.802-1.016 2.662-3.535 4.47-7.08 5.07-1.097.193-3.698.163-4.876-.05-2.57-.457-5.008-1.727-6.512-3.393-.59-.65-1.737-2.347-1.666-2.47.03-.04.295-.203.59-.376l2.377-1.37 1.84-1.067.386.57c.538.823 1.717 1.95 2.428 2.326 2.042 1.077 4.846.924 6.227-.315.59-.538.833-1.097.833-1.92 0-.742-.09-1.067-.477-1.625-.498-.71-1.514-1.31-4.4-2.56-3.302-1.422-4.724-2.306-6.024-3.708-.752-.813-1.463-2.113-1.758-3.2-.244-.904-.305-3.17-.112-4.084.68-3.2 3.088-5.415 6.563-6.075 1.128-.213 3.75-.132 4.856.142zM36.552 32.12l.02 2.62h-8.33v23.67H22.35v-23.67h-8.33v-2.57l.07-2.64c.03-.04 5.1-.06 11.246-.05l11.185.03z"
-                                    fill="white" />
+                                    fill="#374151" />
                             </svg>
                         </div>
 
                         <!-- react info -->
                         <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                            <h3 class="text-white text-3xl font-semibold dark:text-gray-700">Typescript</h3>
+                            <h3 class="dark:text-white text-3xl font-semibold text-gray-700">Typescript</h3>
 
                             <div
                                 class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-                                <div class="badge dark:text-white">Programming Language</div>
-                                <div class="badge dark:text-white">adds static typing to JS</div>
+                                <div class="badge text-white">Programming Language</div>
+                                <div class="badge text-white">adds static typing to JS</div>
                             </div>
 
-                            <p class="text-secondary dark:text-gray-600">TypeScript is a free and open source
+                            <p class="dark:text-secondary text-gray-700">TypeScript is a free and open source
                                 programming language developed and maintained by Microsoft.</p>
                         </div>
                     </div>
@@ -250,7 +250,7 @@
                         <!-- react logo -->
                         <div class="mb-6 lg:mb-0">
                             <svg id="ex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="80" height="96"
-                                fill="white">
+                                fill="#374151">
                                 <path
                                     d="M32 24.795c-1.164.296-1.884.013-2.53-.957l-4.594-6.356-.664-.88-5.365 7.257c-.613.873-1.256 1.253-2.4.944l6.87-9.222-6.396-8.33c1.1-.214 1.86-.105 2.535.88l4.765 6.435 4.8-6.4c.615-.873 1.276-1.205 2.38-.883l-2.48 3.288-3.36 4.375c-.4.5-.345.842.023 1.325L32 24.795zM.008 15.427l.562-2.764C2.1 7.193 8.37 4.92 12.694 8.3c2.527 1.988 3.155 4.8 3.03 7.95H1.48c-.214 5.67 3.867 9.092 9.07 7.346 1.825-.613 2.9-2.042 3.438-3.83.273-.896.725-1.036 1.567-.78-.43 2.236-1.4 4.104-3.45 5.273-3.063 1.75-7.435 1.184-9.735-1.248C1 21.6.434 19.812.18 17.9c-.04-.316-.12-.617-.18-.92q.008-.776.008-1.552zm1.498-.38h12.872c-.084-4.1-2.637-7.012-6.126-7.037-3.83-.03-6.58 2.813-6.746 7.037z" />
                             </svg>
@@ -258,15 +258,15 @@
 
                         <!-- tech info -->
                         <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                            <h3 class="text-white text-3xl font-semibold dark:text-gray-700">Express.js</h3>
+                            <h3 class="dark:text-white text-3xl font-semibold text-gray-700">Express.js</h3>
 
                             <div
                                 class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-                                <div class="badge dark:text-white">Node.js Framework</div>
-                                <div class="badge dark:text-white">Backend development</div>
+                                <div class="badge text-white">Node.js Framework</div>
+                                <div class="badge text-white">Backend development</div>
                             </div>
 
-                            <p class="text-secondary dark:text-gray-600">Express.js, or simply Express, is a back end
+                            <p class="dark:text-secondary text-gray-700">Express.js, or simply Express, is a back end
                                 web application framework for Node.js, released as free and open-source software under
                                 the MIT License. It is designed for building web applications and APIs.</p>
                         </div>
@@ -279,25 +279,25 @@
         <!-- Hire me -->
         <div class="container mt-44 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <section class="w-full">
-                <h2 id="contact" class="secondary-title">Contact me</h2>
-                <p class="section-paragraph dark:text-gray-600">Feel free to contact me any time, through any channel
+                <h2 id="contact" class="secondary-title dark:text-white">Contact me</h2>
+                <p class="section-paragraph dark:text-secondary">Feel free to contact me any time, through any channel
                     below.</p>
 
                 <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
                     <form action="https://formsubmit.co/rdsgabriel.dev@gmail.com" method="POST" enctype="text/plain"
                         class="space-y-12">
                         <div>
-                            <label class="text-white block mb-6 text-xl font-bold dark:text-gray-700">Name</label>
+                            <label class="dark:text-white block mb-6 text-xl font-bold text-gray-700">Name</label>
                             <input type="text" name="name" required
                                 class="w-full bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-400 px-4 py-4">
                         </div>
                         <div>
-                            <label class="text-white block mb-6 text-xl font-bold dark:text-gray-700">Email</label>
+                            <label class="dark:text-white block mb-6 text-xl font-bold text-gray-700">Email</label>
                             <input type="email" name="email" required
                                 class="w-full bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-400 px-4 py-4">
                         </div>
                         <div>
-                            <label class="text-white block mb-6 text-xl font-bold dark:text-gray-700">Message</label>
+                            <label class="dark:text-white block mb-6 text-xl font-bold text-gray-700">Message</label>
                             <textarea type="text" name="message"
                                 class="w-full bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-400 px-4 py-4 h-56 resize-none"></textarea>
                         </div>
@@ -321,24 +321,24 @@
 
                     <div class="mt-12">
                         <!-- Contact info -->
-                        <p class="text-secondary dark:text-gray-500">
+                        <p class="dark:text-secondary text-gray-500">
                             +55 21 9 71899439</p>
                         <a href="mailto:rdsgabriel.dev@gmail.com"
-                            class="text-secondary underline mt-3 block dark:text-gray-500">rdsgabriel.dev@gmail.com</a>
+                            class="dark:text-secondary underline mt-3 block text-gray-500">rdsgabriel.dev@gmail.com</a>
 
                         <!-- Socials -->
                         <div class="flex mt-20 space-x-6">
 
                             <a href="https://github.com/rdsgabriel" target="_blank" rel="noopener noreferrer">
                                 <svg id="git" class="w-8 h-8 lg:w-12 lg:h-12" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 496 512" width="42" height="42" fill="white">
+                                    viewBox="0 0 496 512" width="42" height="42" fill="#374151">
                                     <path
                                         d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
                                 </svg>
                             </a>
                             <a href="https://www.linkedin.com/in/gabriel-rodrigues-835b02192/" target="_blank"
                                 rel="noopener noreferrer">
-                                <svg id="linkedin" class="w-8 h-8 lg:w-12 lg:h-12" width="43" height="43" fill="white"
+                                <svg id="linkedin" class="w-8 h-8 lg:w-12 lg:h-12" width="43" height="43" fill="#374151"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path
                                         d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
@@ -346,7 +346,7 @@
                             </a>
                             <a href="https://wa.me/+5521971899439" target="_blank" rel="noopener noreferrer">
                                 <svg id="wpp" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 lg:w-12 lg:h-12" width="43"
-                                    height="43" fill="white" viewBox="0 0 448 512">
+                                    height="43" fill="#374151" viewBox="0 0 448 512">
                                     <path
                                         d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
                                 </svg>
@@ -362,7 +362,7 @@
     <footer class="flex ">
         <div id="especific"
             class=" hidden md:hidden h-full w-1/2 object-cover bg-grey-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border border-gray-100 absolute top-0 right-0 flex-grow">
-            <button class="ml-36 mt-5" onclick="closeNav()"><svg width="30" height="30" id="close" fill="white"
+            <button class="ml-36 mt-5" onclick="closeNav()"><svg width="30" height="30" id="close" fill="#374151"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                     <path

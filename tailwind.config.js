@@ -9,7 +9,7 @@ module.exports = {
         'selected-text': '#008B8B',
         'theme': '#008B8B',
         'nav': '#404053',
-        'secondary': '#9191A4',
+        'secondary': '#cbd5e1',
         'badge': '#008B8B',
         'input-border': '#565666',
         'input': '#2A2A35',

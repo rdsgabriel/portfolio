@@ -22,7 +22,7 @@
     }
 
     .secondary-title {
-    @apply text-3xl font-bold;
+    @apply text-3xl font-bold ;
     }
 
     .secondary-title::before {
@@ -31,7 +31,7 @@
     }
 
     .section-paragraph {
-    @apply text-secondary my-5 w-full max-w-3xl;
+    @apply text-gray-700 my-5 w-full max-w-3xl;
     }
 
     .badge {
@@ -62,20 +62,20 @@
     opacity: 1;
     }
 
-    .backs {
-    background-image: url("bg.svg");
+    .backsdark {
+    background-image: url("bgdark.svg");
     }
-    .backslight{
-    background-image: url("bglight.svg");
+    .backs{
+    background-image: url("bg.svg");
     }
 
     .animate-charcter {
     background-image: linear-gradient(
         -225deg,
-        #a0a0a0 0%,
+        #f8f8ff 0%,
         #008b8b 29%,
-        #fff 67%,
-        #fff 100%
+        #374151 67%,
+        #d4d4d4 100%
     );
     background-size: auto auto;
     background-clip: border-box;

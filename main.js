@@ -41,27 +41,10 @@ const close = document.getElementById("close")
 const open = document.getElementById("open")
 
 
-off.addEventListener('change',closeLight = () => {
+off.addEventListener('change',light = () => {
 	dom.classList.remove('dark')
-	bgChange.classList.remove('backslight')
+	bgChange.classList.remove('backsdark')
 	bgChange.classList.add('backs')	
-	tail.style.fill='white'
-	type.style.fill='white'
-	react.style.fill='white'
-	ex.style.fill='white'
-	git.style.fill='white'
-	linkedin.style.fill='white'
-	wpp.style.fill='white'
-	close.style.fill='white'
-	open.style.fill='white'
-	off.classList.add('hidden')
-	on.classList.remove('hidden')
-})
-
-on.addEventListener('change',openLight = () => {
-	dom.classList.add('dark')
-	bgChange.classList.remove('backs')
-	bgChange.classList.add('backslight')	
 	tail.style.fill='#374151'
 	type.style.fill='#374151'
 	react.style.fill='#374151'
@@ -71,6 +54,23 @@ on.addEventListener('change',openLight = () => {
 	wpp.style.fill='#374151'
 	close.style.fill='#374151'
 	open.style.fill='#374151'
+	off.classList.add('hidden')
+	on.classList.remove('hidden')
+})
+
+on.addEventListener('change',dark = () => {
+	dom.classList.add('dark')
+	bgChange.classList.remove('backs')
+	bgChange.classList.add('backsdark')	
+	tail.style.fill='white'
+	type.style.fill='white'
+	react.style.fill='white'
+	ex.style.fill='white'
+	git.style.fill='white'
+	linkedin.style.fill='white'
+	wpp.style.fill='white'
+	close.style.fill='white'
+	open.style.fill='white'
 	on.classList.add('hidden')
 	off.classList.remove('hidden')
 })
