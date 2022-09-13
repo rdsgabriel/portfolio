@@ -19,6 +19,14 @@
             <div class="text-xl font-semibold tracking-wide"><a href="https://github.com/rdsgabriel" target="_blank"
                     rel="noopener noreferrer">rdsgabriel.dev</a>&nbsp &nbsp<img class="w-6 float-right pt-[6px]"
                     src="brazil.gif" alt="" srcset=""> </div>
+                    <div>
+                        <button id="on" class="px-4 py-2 bg-theme text-white font-bold flex  hover:bg-teal-700" onclick="openLight()">
+                            on
+                            </button">
+                            <button id="off" class=" hidden px-4 py-2 bg-theme text-white font-bold  hover:bg-teal-700" onclick="closeLight()">
+                                off
+                                </button">    
+                    </div>                   
             <div class="hidden md:flex space-x-12 items-center">
                 <a href="#" class="text-selected-text">Home</a>
                 <a href="#work">My work</a>
@@ -360,14 +368,6 @@
                     <path
                         d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
                 </svg></button>
-        </div>
-        <div>
-            <button id="on" class="px-6 py-2 bg-theme text-white font-bold flex  hover:bg-teal-700" onclick="openLight()">
-                turn lights on
-                </button">
-                <button id="off" class=" hidden px-6 py-2 bg-theme text-white font-bold  hover:bg-teal-700" onclick="closeLight()">
-                    turn lights off
-                    </button">    
         </div>
     </footer>
 </body>
