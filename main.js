@@ -26,5 +26,51 @@ const closeNav = () => {
 	nav.classList.add('hidden')
 	sim.classList.remove('hidden')
 }
+const off = document.getElementById("off")
+const on = document.getElementById("on")
+const dom = document.querySelector('html')
+const bgChange = document.querySelector('body')
+const tail = document.getElementById("tail")
+const type = document.getElementById("type")
+const react = document.getElementById("react")
+const ex = document.getElementById("ex")
+const git = document.getElementById("git")
+const linkedin = document.getElementById("linkedin")
+const wpp = document.getElementById("wpp")
+const close = document.getElementById("close")
+const open = document.getElementById("open")
 
 
+off.addEventListener('change',closeLight = () => {
+	dom.classList.remove('dark')
+	bgChange.classList.remove('backslight')
+	bgChange.classList.add('backs')	
+	tail.style.fill='white'
+	type.style.fill='white'
+	react.style.fill='white'
+	ex.style.fill='white'
+	git.style.fill='white'
+	linkedin.style.fill='white'
+	wpp.style.fill='white'
+	close.style.fill='white'
+	open.style.fill='white'
+	off.classList.add('hidden')
+	on.classList.remove('hidden')
+})
+
+on.addEventListener('change',openLight = () => {
+	dom.classList.add('dark')
+	bgChange.classList.remove('backs')
+	bgChange.classList.add('backslight')	
+	tail.style.fill='#374151'
+	type.style.fill='#374151'
+	react.style.fill='#374151'
+	ex.style.fill='#374151'
+	git.style.fill='#374151'
+	linkedin.style.fill='#374151'
+	wpp.style.fill='#374151'
+	close.style.fill='#374151'
+	open.style.fill='#374151'
+	on.classList.add('hidden')
+	off.classList.remove('hidden')
+})
